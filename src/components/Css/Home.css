@@ -1,0 +1,708 @@
+.product-card {
+    width: 350px;
+    /* height: 550px; */
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 50px auto;
+    background:  #060c21;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+.badge2 {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  /* top: 0px; */
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  background: rgb(130, 17, 134);
+  color: #f5f10a;
+  padding: 5px 10px;
+  /* width: 30px; */
+  /* height: 30px; */
+}
+
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    padding: 50px;
+    background: #f0f0f0;
+}
+
+.product-tumb img {
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    height: 100%;
+    width: 100%;
+}
+
+.product-details {
+    padding: 30px;
+}
+
+.product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+.product-details h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #ddd4d4;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+    color: #fbb72c;
+}
+
+.product-details p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #fbb72c;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #e1e1e1;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-links a:hover {
+    color: #fbb72c;
+}
+
+
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .product-card {
+      /* width: 90%;  */
+      /* Make the card take 90% of the screen */
+  }
+
+  .badge .badge2 {
+      font-size: 10px;
+      padding: 2px 6px;
+  }
+
+  .product-bottom-details {
+      display: flex;
+      flex-direction: column; /* Stack the price and buttons */
+      align-items: center;
+  }
+
+  .product-bottom-details div {
+      width: 100%; /* Adjust width for smaller screens */
+      text-align: center;
+  }
+
+  .product-links a {
+      font-size: 14px;
+  }
+  .btn1, .btn3 {
+    width: 45%; /* Adjust width for smaller screens */
+    height: 35px; /* Reduce height */
+    font-size: 14px; /* Slightly reduce font size */
+}
+
+.sumbit {
+    height: 40px; /* Adjust height for smaller screens */
+    font-size: 14px; /* Slightly reduce font size */
+}
+
+.btn2 {
+    height: 35px; /* Reduce height for smaller screens */
+    font-size: 14px; /* Slightly reduce font size */
+}
+}
+
+@media (max-width: 480px) {
+  .product-card {
+      /* width: 100%;  */
+      /* Make the card full width on small screens */
+  }
+
+  .product-details {
+      padding: 10px; /* Further reduce padding for very small screens */
+  }
+
+  .product-tumb {
+      padding: 10px; /* Reduce image padding */
+  }
+
+  .badge, .badge2 {
+      font-size: 8px;
+      padding: 1px 4px;
+  }
+
+  .product-bottom-details div {
+      margin-bottom: 5px;
+  }
+  .btn1, .btn3 {
+    width: 90%; /* Make buttons wider on very small screens */
+    height: 30px; /* Further reduce height */
+    font-size: 12px; /* Reduce font size */
+}
+
+.sumbit {
+    height: 45px; /* Adjust height for very small screens */
+    font-size: 12px; /* Further reduce font size */
+}
+
+.btn2 {
+    height: 30px; /* Further reduce height */
+    font-size: 12px; /* Further reduce font size */
+}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@600&display=swap');
+
+:root {
+  --green: #b8d953;
+  --lilac: #b2b2eb;
+  --pink: #bb86e9;
+  --dark-green: #529a91;
+  --peach: #fe96b7;
+  --black: #191819;
+  --grey: #2a292a;
+  --white: #d9d9d9;
+
+}
+
+p, h2 {
+  margin: 0;
+}
+
+h2 {
+  color: white;
+}
+
+
+.code-block {
+  font-family: 'Courier New', Courier, monospace; 
+  color: white;
+  background-color: black; 
+  padding: 5px; 
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
+  
+}
+
+body {
+  background: var(--black);
+  font-family: 'Onest', sans-serif;
+  /* top: 30%; */
+}
+
+.loader-page-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.loader-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-wrap {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: center;
+}
+
+
+.loader-3 {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    width: 80px;
+    height: 20px;
+  }
+  
+  .loader-3 div {
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #ffbf00;
+    border-radius: 50%;
+    display: inline-block;
+    animation: loader-3-bounce 1.4s infinite ease-in-out both;
+  }
+  
+  .loader-3 div:nth-child(1) { animation-delay: -0.32s; }
+  .loader-3 div:nth-child(2) { animation-delay: -0.16s; }
+  
+  @keyframes loader-3-bounce {
+    0%, 80%, 100% {
+      transform: scale(0);
+    }
+    40% {
+      transform: scale(1.0);
+    }
+  }
+  
+
+  .sumbit
+  {
+      cursor: pointer;
+      margin-top: 20px;
+      letter-spacing: 1px;
+  }
+  .btn1{
+    cursor: pointer;
+    position: relative;
+    width: 30%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background:linear-gradient(315deg,#e91e63,#5d02ff) ;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    right:  10px;
+  }
+  .btn2{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background:linear-gradient(315deg,#e91e63,#5d02ff) ;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    right:  10px;
+  }
+  .btn3{
+    cursor: pointer;
+    position: relative;
+    width: 30%;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background:linear-gradient(315deg,#e91e63,#5d02ff) ;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    margin: 10px;
+    right:  10px;
+  }
+  .sumbit:hover
+  {
+      background:linear-gradient(315deg,#5d02ff,#e91e63) ;
+  }
+  .btn1:hover{
+    background:linear-gradient(315deg,#5d02ff,#e91e63) ;
+  }
+  .btn2:hover{
+    background:linear-gradient(315deg,#5d02ff,#e91e63) ;
+  }
+  .btn3:hover{
+    background:linear-gradient(315deg,#5d02ff,#e91e63) ;
+  }
+  .sumbit:active
+  {
+      color: rgba(255, 255, 255, 0.521);
+      background:linear-gradient(315deg,#e91e6271,#5f02ff8c) ;
+  }
+  .btn1::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: linear-gradient(315deg,#e91e63,#5d02ff);
+    z-index: -1;
+    transform: skew(2deg,1deg);
+    border-radius: 10px;
+  }
+  .btn2::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: linear-gradient(315deg,#e91e63,#5d02ff);
+    z-index: -1;
+    transform: skew(2deg,1deg);
+    border-radius: 10px;
+  }
+  .sumbit::before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: linear-gradient(315deg,#e91e63,#5d02ff);
+    z-index: -1;
+    transform: skew(2deg,1deg);
+    border-radius: 10px;
+}
+.sumbit
+{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background:linear-gradient(315deg,#e91e63,#5d02ff) ;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    right:  10px;
+}
+.product-card::before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: linear-gradient(315deg,#e91e63,#5d02ff);
+    z-index: -1;
+    transform: skew(2deg,1deg);
+    border-radius: 10px;
+}
+.cont{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.h1{
+  color: white;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  position:absolute;
+  left:   190px;
+  top: 10px;
+}
+.profile_name{
+  position:absolute;
+  right:   10px;
+  top: 10px;
+}
+.num{
+  text-align: center;
+  position: relative;
+  right: 8px;
+  /* font-size: larger; */
+}
+/* .form
+{
+    position: relative;
+    background: #060c21;
+    border: 1px solid #000;
+    width: 350px;
+    padding: 40px 40px 60px;
+    border-radius: 10px;
+    text-align: center;
+}
+.form .input
+{
+    margin-top: 40px;
+    text-align: left;
+}
+.form .inputBox
+{
+    margin-top: 10px;
+}
+.form .inputBox label
+{
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.form .input .inputBox input
+{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    background:linear-gradient(315deg,#e91e63,#5d02ff) ;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.form .input .inputBox input[type="submit"]
+{
+    cursor: pointer;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+.form .input .inputBox input[type="submit"]:hover
+{
+    background:linear-gradient(315deg,#5d02ff,#e91e63) ;
+}
+.form .input .inputBox input[type="submit"]:active
+{
+    color: rgba(255, 255, 255, 0.521);
+    background:linear-gradient(315deg,#e91e6271,#5f02ff8c) ;
+} */
+
+
+
+/* ------------------------------------------- */
+
+
+/* 
+.inputBox{
+  width: 90%;
+  height: 40px;
+  border: none;
+    outline: none;
+    padding: 5px 15px;
+  background:linear-gradient(315deg,#e91e63,#5d02ff) ;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: center;
+}
+#inputBox{
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+} */
+/* #searchbtn{
+  width: 90%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background:linear-gradient(315deg,#e91e63,#5d02ff) ;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    right:  10px;
+} */
+
+
+/* -------------------------------------------- */
+/* 
+#sumbit
+  {
+      cursor: pointer;
+      margin-top: 20px;
+      letter-spacing: 1px;
+  }
+
+#sumbit:hover
+  {
+      background:linear-gradient(315deg,#5d02ff,#e91e63) ;
+  }
+
+#sumbit:active
+  {
+      color: rgba(255, 255, 255, 0.521);
+      background:linear-gradient(315deg,#e91e6271,#5f02ff8c) ;
+  }
+
+
+#sumbit::before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: linear-gradient(315deg,#e91e63,#5d02ff);
+    z-index: -1;
+    transform: skew(2deg,1deg);
+    border-radius: 10px;
+}
+#sumbit
+{
+    position: relative;
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background:linear-gradient(315deg,#e91e63,#5d02ff) ;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    right:  10px;
+} */
+
+
+
+/* --------------------------------------------- */
+
+.add{
+  cursor: pointer;
+margin-top: 10px;
+letter-spacing: 1px;
+position: relative;
+height: 40px;
+border: none;
+outline: none;
+padding: 5px 10px;
+background: linear-gradient(315deg, #e91e63, #5d02ff);
+color: #fff;
+font-size: 15px;
+border-radius: 10px;
+white-space: nowrap;
+right:  45px;
+
+}
+.add:hover{
+  background:linear-gradient(315deg,#5d02ff,#e91e63) ;
+}
+.add:active
+{
+    color: rgba(255, 255, 255, 0.521);
+    background:linear-gradient(315deg,#e91e6271,#5f02ff8c) ;
+}
+.del{
+  cursor: pointer;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  position: relative;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  background: linear-gradient(315deg, #e91e63, #5d02ff);
+  color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+  white-space: nowrap;
+  right:  30px;
+}
+.del:hover{
+  background:linear-gradient(315deg,#5d02ff,#e91e63) ;
+}
+.del:active
+{
+    color: rgba(255, 255, 255, 0.521);
+    background:linear-gradient(315deg,#e91e6271,#5f02ff8c) ;
+}
+
+.addel {
+  cursor: pointer;
+  position: relative;
+  width: 100%; /* Full width by default */
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 5px 3px;
+  background: linear-gradient(315deg, #e91e63, #5d02ff);
+  color: #fff;
+  font-size: 14px;
+  border-radius: 10px;
+  margin: 10px;
+  right: 40px;
+  white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .addel {
+    width: 90%; /* Reduce width for smaller screens */
+    padding: 5px 8px;
+    font-size: 14px; /* Slightly smaller font size */
+    margin: 10px auto; /* Center button on smaller screens */
+    right: 0; /* Reset right position for better alignment */
+  }
+}
+
+@media (max-width: 576px) {
+  .addel {
+    width: 95%; /* Almost full width for small mobile screens */
+    padding: 5px 6px;
+    font-size: 13px; /* Further reduce font size for smaller screens */
+    margin: 8px auto;
+    right: 0; /* Ensure it's centered on mobile */
+  }
+}
